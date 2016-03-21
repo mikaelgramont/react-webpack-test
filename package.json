@@ -4,7 +4,9 @@
   "description": "Based on https://www.twilio.com/blog/2015/08/setting-up-react-for-es6-with-webpack-and-babel-2.html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "serve": "webpack-dev-server --progress --colors",
+    "test": "karma start"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +19,12 @@
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "jasmine": "^2.2.1",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-webpack": "^1.5.0",
     "webpack": "^1.12.12"
   }
 }
